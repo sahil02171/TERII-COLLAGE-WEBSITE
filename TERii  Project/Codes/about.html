@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT-TERii</title>
+
+    <!-- fevicon -->
+    <link rel="icon" type="image/x-icon" href="/Codes/TERii/terii  T logo.png">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    
+
+    <style>
+        /* nav bar*/
+        .navbar-brand {
+            margin-top: 15px;
+            margin-left: 45px;
+            width: 240px;
+        }
+        
+        .navbar-nav .nav-item {
+            margin: 0 15px;
+        }
+        
+        .navbar-nav .nav-link {
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            position: relative;
+            opacity: 0.75;
+            font-size: 0.9rem;
+            display: inline;
+            transition: 0.5s;
+            font-family:'Times New Roman', Times, serif;
+        }
+        
+        .navbar-nav .nav-link:hover {
+            opacity: 1;
+            
+            color: #f54242;
+        }
+        
+        .navbar-nav .nav-link::after {
+            content: "";
+            width: 0;
+            height: 2px;
+            background: #f54242;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+        }
+        
+        .navbar-nav .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .line{
+            width: 70%;
+            height: 2px;
+            background-color: #f54242;
+            margin-left: 240px;
+        }
+
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+        #demo{
+            margin-top: 60px;
+        }
+        /*<!-- image and abouit -->*/
+        .media{
+            
+            width: 60%;
+            margin: 0 auto;
+            margin-top: 20px;
+            font-size: 14px;
+            font-family:'Times New Roman', Times, serif;
+            
+        }
+        .media p{
+            padding-left: 0px;
+            font-family:'Times New Roman', Times, serif;
+        }
+        .para2{
+            font-family:'Times New Roman', Times, serif;
+            width: 60%;
+            margin: 0 auto;
+            font-size: 14px;
+            margin-top: 10px;
+            font-weight: 300;
+            
+        }
+        .slide{
+            
+            transition: 1s;
+        }
+        .dj{
+            text-align: center;
+            font-size: 25px;
+            color: #f54242;
+            margin-top: 25px;
+        }
+
+
+        /* container*/
+        .container{
+            margin-top: 90px;
+        }
+        .box{
+            margin-left: 90px;
+            margin-top: 60px;
+            display: flex;
+            justify-content: center;
+
+        }
+        
+       /* Arrow and text styling */
+    .arrow {
+        width: 14px;
+        height: 14px;
+        background-color: red;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+    }
+
+    .arrow::before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        border-right: 2px solid white;
+        border-bottom: 2px solid white;
+        transform: rotate(310deg);
+    }
+
+    .text {
+        font-size: 0.9rem;
+        color: #333;
+        font-family:'Times New Roman', Times, serif;
+        font-weight: 100;
+    }
+
+
+
+
+
+
+    /* Basic styling for the contact bar */
+.contact-bar {
+    background-color: rgb(239, 34, 34);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+
+
+    
+}
+
+.contact-info {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.social-icons {
+    display: flex;
+    gap: 13px;
+}
+
+.social-icon {
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for social media icons */
+.social-icon:hover {
+    color: #f2f2f2; /* Change color on hover */
+}
+.bd1{
+    border: 2px solid #fff;
+    width: 37px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+.bd2{
+    border: 2px solid #fff;
+    width: 37px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+.bd3{
+    border: 2px solid #fff;
+    width: 37px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+.bd4{
+    border: 2px solid #fff;
+    width: 37px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.bd1:hover{
+    background-color: #3386f2;
+    box-shadow: 1px 1px 33px 12px rgba(255,255,255,1);
+}
+.bd2:hover{
+    background-color: #f54242;
+    box-shadow: 1px 1px 33px 12px rgba(255,255,255,1);
+}
+.bd3:hover{
+    background-color: #3386f2;
+    box-shadow: 1px 1px 33px 12px rgba(255,255,255,1);
+}
+.bd4:hover{
+    background-color: #f54242;
+    box-shadow: 1px 1px 33px 12px rgba(255,255,255,1);
+}
+
+      /* A&R */
+      .ar{
+        text-align: center;
+    }
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  width: 60%;
+  text-align: center;
+  margin-left: 310px;
+}
+
+.card {
+  width: 170px;
+  height: 170px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px #888888;
+  background-color: #f2f2f2;
+  position: relative;
+  transition: transform 0.3s ease;
+  background-color: #e2dfdf;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 10px #fbf9f9;
+  background-color: #fbf9f9;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.boxar{
+    width: 100%;
+    background-color: #e2dfdf;
+    margin-top: 20px;
+}
+
+  /* footer */
+  .footer {
+    background-color: #2a2727;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 30px;
+    color: #ffffff;
+    gap: 30px;
+}
+.footer h5 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+.footer ul li {
+    margin-bottom: 10px;
+}
+.footer ul li a {
+    color: #ebebeb;
+    text-decoration: none;
+}
+.footer ul li a:hover {
+    color: #f54242;
+    text-decoration: underline;
+}
+.social-ic {
+    
+    margin-top: 20px;
+}
+.social-ic a {
+    margin: 0 10px;
+    font-size: 20px;
+    color: #eeeeee;
+}
+.social-ic a:hover {
+    color: #f54242;
+}
+.footer-bottom {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #dee2e6;
+}
+.footer-bottom p {
+    margin-bottom: 0;
+    color: #6c757d;
+}
+
+.dir{
+    margin-left: 20px;
+    width: 425px;
+    height: 325px;
+    
+}
+.dir:hover{
+    box-shadow: 2px 5px 17px -1px rgba(245,240,245,1);
+}
+.logo{
+    padding-bottom: 40px;
+    padding-right: 1290px;
+
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 16px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.whatsapp-button:hover {
+    background-color: #1ebe57;
+    text-decoration: none;
+    color: white;
+}
+
+/* WhatsApp icon styling */
+.whatsapp-button img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+    </style>
+</head>
+<body>
+        <!-- contact bar -->
+    <div class="contact-bar">
+        <div class="contact-info">
+            <p>Email: terii@gmail.com | Phone: +916205080412</p>
+        </div>
+        <div class="social-icons">
+            <div class="bd1">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100045992336103&mibextid=ZbWKwL"
+                  class="social-icon"
+                  target="_blank"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </div>
+              <div class="bd2">
+                <a
+                  href="https://www.instagram.com/terii_campus_official"
+                  class="social-icon"
+                  target="_blank"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+              <div class="bd3">
+                <a href="https://www.twitter.com/@collegeterii" class="social-icon" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </div>
+              <div class="bd4">
+                <a href="https://www.youtube.com/@teriikkr" class="social-icon" target="_blank">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+        </div>
+    </div>
+
+
+
+    <a href="https://wa.me/916205080412" target="_blank" class="whatsapp-button">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp">
+        Chat with Us
+      </a>
+
+
+
+
+
+
+
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-sm">
+        <a class="navbar-brand" href="index.html"><img src="/Codes/TERii/terii logo.png" alt="TERII Logo"></a>
+        
+        <button class="navbar-toggler menu-btn" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">HOME</a>
+                    <a class="nav-link" href="about.html">ABOUT</a>
+                    <a class="nav-link" href="course.html">COURSE</a>
+                    <a class="nav-link" href="payment.html">PAYMENT</a>
+                    <a class="nav-link" href="admission.html">ADMISSION </a>
+                    <a class="nav-link" href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="line"></div>
+            <!-- carausol to show about -->
+            
+            <div id="demo" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+                
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item slide active">
+                    <img src="/banner-last-2-1200x353.jpg" alt="banner1" width="1100" height="500">
+                    </div>
+                    <div class="carousel-item slide">
+                    <img src="/Banner-2-1-1-1200x372.jpg" alt="banner2" width="1100" height="500">
+                    </div>
+                    <div class="carousel-item slide">
+                    <img src="/9TH-BANNER-1200x371.jpg" alt="banner3" width="1100" height="500">
+                    </div>
+                </div>
+                
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+                </div>
+
+                <!-- image and abouit -->
+                
+                <div class="media">
+                    <img src="/Codes/TERii//terii-ins-3.jpg" class="align-self-start mr-3" style="width:395px; height:395px">
+                    <div class="media-body">
+                    
+                    <p class="text-justify">Technology Education and Research Integrated Institutions, commonly known as TERii was founded under the aegis of Gyankund Foundation Trust in the year 2007. TERii is among Top Engineering and Management college in Kurukshetra . The trust Gyandkund Foundation has a clear motto “To Educate and To Serve”. TERii as an institution was established with a fortune mission of working for the development of the society by spreading education and delivering highly qualified engineers, entrepreneurs and managers to the society. Situated at the Kaithal Road in Kurukshetra, TERii campus is spread in a lavishing 20+ acres of green land which symbolizes peace, prosperity and optimism. The campus includes state of the art infrastructure, laboratories and workshops equipped with modern equipments, library, cafeteria, hostels and much more.TERii facilitates students from pan India, Nepal and other countries across the globe as well.  The campus symbolizes a global diaspora of cultures wherein students from all across the globe live and study together . The real essence of the mixture is observed in the outcomes of projects delivered by the students and the events organized by these students. <br> 
+                        
+                        From the initial phase, the founders of TERii decided to make TERii a self-finance and the best engineering and management college of India.</p>
+                
+                    </div>
+                </div>
+                
+                <div class="para2">
+                    <p class="text-justify">
+
+                        
+                        
+                        The founders had a clear and well defined mission– to build an unaided, self– financed Institute committed to deliver education of internationally recognized standards, an Institute that would go on to serve as an intellectual resource base in India and the sub-continent.</p>
+                </div>
+
+                <div class="container" style="text-align: justify;">
+                    <h1 class="dj">Establishing Centers of Excellence for Integrated & Inclusive Education</h1>
+                    <div class="box">
+                    <div class="row">
+                        <!-- Left Column (50%) -->
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="arrow"></div>
+                                <div class="text">TERii is a PARIVAR that nurtures 24x7 learning.</div>
+                            </div>
+                
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="arrow"></div>
+                                <div class="text">TERII is a caring campus where every student is supported to explore his/her fullest potential.</div>
+                            </div>
+                
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="arrow"></div>
+                                <div class="text">TERII facilitates student’s growth with Creativity, Teamwork, Innovation, Dedication.</div>
+                            </div>
+                
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="arrow"></div>
+                                <div class="text">Cooperation and Event Management.</div>
+                            </div>
+                
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="arrow"></div>
+                                <div class="text">Distinguished Faculty from top institutions.</div>
+                            </div>
+                        </div>
+                
+                        <!-- Right Column (50%) -->
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="arrow"></div>
+                                <div class="text">750 Seater on-campus Hostel that feels like Home.</div>
+                            </div>
+                
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="arrow"></div>
+                                <div class="text">At TERII, focus is laid on Projects and Practical.</div>
+                            </div>
+                
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="arrow"></div>
+                                <div class="text">Top ranked institutes in Engineering, Management & Polytechnic</div>
+                            </div>
+                
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="arrow"></div>
+                                <div class="text">Students placed in Fortune 500 Companies, MNCs & leading Corporate.</div>
+                            </div>
+                
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="arrow"></div>
+                                <div class="text">Upto 100% scholarship for meritorious students.</div>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="arrow"></div>
+                                <div class="text">20 Acres of Learning Environment.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="boxar">
+                <!-- A&R -->
+                <div class="ar"><h1>Accreditations & Recognitions</h1></div>
+
+
+                <div class="container">
+                    <div class="card">
+                        <a href="https://www.aicte-india.org/" target="_blank">
+                    <img src="/Codes/TERii/aicte.png" alt="AICTE Logo">
+                </a>
+                    </div>
+                
+                    <div class="card">
+                        <a href="https://www.workhuman.com/blog/human-resource-development-hrd/" target="_blank">
+                    <img src="/Codes/TERii/hr.png" alt="HRD Logo">
+                </a>
+                    </div>
+                
+                    <div class="card">
+                        <a href="https://www.iao.org/" target="_blank">
+                    <img src="/Codes/TERii/IAO-1.png" alt="IAO Logo">
+                </a>
+                    </div>
+                
+                    <div class="card">
+                        <a href="https://www.iitb.ac.in/" target="_blank">
+                    <img src="/Codes/TERii/IITB-logo.png" alt="ljsnhdfg">
+                </a>
+                    </div>
+                
+                    <div class="card">
+                        <a href="https://aiesec.org/" target="_blank">
+                        <img src="/Codes/TERii/AIESEC-logo-blue.png" alt="ljsnhdfg">
+                    </a>
+                        </div>
+                
+                    <div class="card">
+                        <a href="https://haryana.gov.in/" target="_blank">
+                    <img src="/Codes/TERii/emblem.png" alt="ljsnhdfg">
+                </a>
+                        </div>
+                    
+                    <div class="card">
+                        <a href="https://kuk.ac.in/" target="_blank">
+                            <img src="/Codes/TERii/Kurukshetra_University_logo.png00.png" alt="IAO Logo">
+                        </a>
+                            </div>
+                        
+                    <div class="card">
+                        <a href="http://www.centralboard.org/index9ba3.html?page=home" target="_blank">
+                            <img src="/Codes/TERii/CBSE.png" alt="ljsnhdfg">
+                        </a>
+                            </div>
+                        </div>
+
+
+                        
+    <!-- Footer -->
+    <footer class="footer">
+        <img src="/Codes/TERii/terii logo.png" alt="logo" class="logo">
+        <div class="container1">
+            <div class="row">
+                <div class="dir1 col-md-3">
+                    <iframe class="dir" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13830.971670426447!2d76.71619655662998!3d29.9293024997049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1caccb6bef75%3A0xec181b0ff9c3e9c8!2sTechnology%20Education%20%26%20Research%20integrated%20institutions%20(TERii)%2C%20Kurukshetra%2C%20Haryana!5e0!3m2!1sen!2sin!4v1729722949980!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="course.html">Courses</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <p>Email: terii@gmail.com</p>
+                    <p>Phone: +9162 0508 0412</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Follow Us</h5>
+                    <div class="social-ic">
+                        <a href="https://www.facebook.com/profile.php?id=100045992336103&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/terii_campus_official"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.twitter.com/@collegeterii"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/@teriikkr"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TERii. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+                
+            
+</body>
+</html>
